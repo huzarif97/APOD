@@ -15,7 +15,7 @@ def fetchApod():
     try:
         newDate = datetime.datetime(int(year),int(month),int(day))
         if newDate > datetime.datetime.now():
-            print("Can't enter dates in the future idiot, try again.")
+            print("Can't enter dates in the future dummy, try again.")
             return
         else:
             desiredDate = newDate.strftime('%Y-%m-%d')
