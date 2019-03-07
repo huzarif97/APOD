@@ -6,7 +6,7 @@ import datetime
 
 def fetchApod():
     print("This super sexy python script gets the NASA Astronomy Picture Of the Day...")
-    day   = input("Enter day of image: ")
+    day   = input("Enter day of image (Press Enter 3 times to get today): ")
     month = input("Enter month: ")
     year  = input("Enter year: ")
 
@@ -77,6 +77,7 @@ def fetchApod():
         imagy.show()
     except:
         print("Sorry the URL is probably a YouTube video and not a picture. Here is the link:")
+
         print(imgUrl)
 
     # print(data)
